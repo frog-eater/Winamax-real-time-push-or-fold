@@ -283,7 +283,7 @@ public class ICM2 {
     // blinds +antes
     double betSum = 0;
 
-    // st‰kkej‰ deals with a temporary table
+    // st√§kkej√§ deals with a temporary table
     double[] stacks = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     for (int i = 0; i < 10; i++) {
       stacks[i] = playerData[i][ STACK]-playerData[i][ BETS];
@@ -331,7 +331,7 @@ public class ICM2 {
         oppStack += erotus;
       }
     }
-    // if the opponent has paid less than I do, so he st‰kin will be forced to be just the end of
+    // if the opponent has paid less than I do, so he st√§kin will be forced to be just the end of
     else {
       double erotus = myBets - oppBets;
       betSum -= erotus;
@@ -358,7 +358,7 @@ public class ICM2 {
     // players gathered in private, and the sum of the blinds
     double betSum = 0;
 
-    // st‰kkej‰ deals with a temporary table
+    // st√§kkej√§ deals with a temporary table
     double[] stacks = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     // EV win
@@ -613,7 +613,7 @@ public class ICM2 {
 
     //printf("EV call lose:\t%.2lf%%\n", ICMloseArray[myIndex]*100);
 
-    // voittotodenn‰kˆisyys fee is paid,
+    // voittotodenn√§k√∂isyys fee is paid,
     double winPercentage = myWinPercentage(myHand, oppIndex, playerData);
     double EVpush = winPercentage * EVwin + (1.0 - winPercentage) * EVlose;
 
@@ -708,7 +708,7 @@ public class ICM2 {
     //System.out.println("EV call lose:\t{0:F2}%", ICMloseArray[myIndex] * 100);
     //printf("EV call lose:\t%.2lf%%\n", ICMloseArray[myIndex]*100);
 
-    // voittotodenn‰kˆisyys fee is paid,
+    // voittotodenn√§k√∂isyys fee is paid,
     double winPercentage = myWinPercentage(myHand, oppIndex, playerData);
     double EVpush = winPercentage * EVwin + (1.0 - winPercentage) * EVlose;
 
@@ -849,7 +849,7 @@ public class ICM2 {
           {23, 21, 19, 17, 15, 13, 11, 9, 7, 5, 3, 1, 0}
   };
 
-  // 52x52 -table, in order to get the hand is worth a scale of 1-100. This is on top of esitellyll‰ sklansky [13] [13] values of the table, using
+  // 52x52 -table, in order to get the hand is worth a scale of 1-100. This is on top of esitellyll√§ sklansky [13] [13] values of the table, using
   private static short[][] handValues = {
           {23, 95, 91, 89, 90, 87, 81, 76, 66, 56, 45, 32, 17, 23, 100, 99, 96, 98, 96, 91, 85, 77, 69, 55, 40, 23, 23, 100, 99, 96, 98, 96, 91, 85, 77, 69, 55, 40, 23, 23, 100, 99, 96, 98, 96, 91, 85, 77, 69, 55, 40, 23},
           {95, 15, 86, 84, 84, 81, 79, 73, 64, 54, 43, 32, 16, 100, 15, 95, 93, 94, 92, 90, 82, 74, 65, 52, 39, 22, 100, 15, 95, 93, 94, 92, 90, 82, 74, 65, 52, 39, 22, 100, 15, 95, 93, 94, 92, 90, 82, 74, 65, 52, 39, 22},
